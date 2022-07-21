@@ -1,0 +1,9 @@
+.header {
+    padding-top: 6px;
+    background-color: var(--secondary-bgc);
+
+    & .container {
+        display: flex;
+        justify-content: space-between;
+    }
+}

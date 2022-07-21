@@ -1,0 +1,47 @@
+.testimonials {
+    padding-top: 153px;
+    padding-bottom: 170px;
+}
+
+.testimonials__img {
+    margin: 0 auto;
+}
+
+.testimonials__comment {
+    width: 280px;
+    height: 308px;
+    padding: 43px 62px 26px 62px;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 255%;
+    text-align: center;
+
+    background-image: url('../images/Mobile/quotes-1x.png'), url('../images/mobile/text-underline-1x.png');
+        background-size: 54px, 180px;
+        background-repeat: no-repeat;
+        background-position: top 28px left 61px, top 71px left 50px;
+
+    @media (in-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/Mobile/quotes-2x.png'), url('../images/mobile/text-underline-2x.png');
+}
+}
+
+.testimonials__icon {
+    display: flex;
+    margin: 30px auto 0 auto;
+}
+
+.testimonials__name {
+    margin: 18px auto 0 auto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 186%;
+    text-align: center;
+}
+
+.testimonials__nav {
+    margin-top: 30px;
+}

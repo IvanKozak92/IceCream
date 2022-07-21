@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ice-Cream" />
+    <title>Ice-Cream</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <a id="home"></a>
+      <div class="container">
+        <picture>
+          <source srcset="./images/Mobile/logo-mob-1x.png 1x, ./images/Mobile/logo-mob-2x.png 2x" />
+          <img src="./images/Mobile/logo-mob-1x.png" alt="header logo" width="199" height="50" />
+        </picture>
+        <button
+          type="button"
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="20" height="12" aria-label="Mobile menu switch">
+            <use class="burger-menu" href="./images/Mobile/symbol-defs.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Menu -->
+      <div class="menu js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg width="14" height="14">
+            <use class="menu__close" href="./images/Mobile/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="menu__content">
+          <button class="menu__button" type="button">
+            Buy now
+            <svg class="menu__button-icon" width="15" height="22" aria-label="Mobile menu switch">
+              <use class="" href="./images/Mobile/symbol-defs.svg#small-arrow"></use>
+            </svg>
+          </button>
+          <ul class="menu__links">
+            <li class="menu__links-item">
+              <a class="menu__link a" href="#home">Home</a>
+            </li>
+            <li class="menu__links-item js-close-menu">
+              <a class="menu__link js-close-menu" href="./index.html#testimonials">About us</a>
+            </li>
+            <li class="menu__links-item">
+              <a class="menu__link" href="#production">How it’s made?</a>
+            </li>
+            <li class="menu__links-item">
+              <a class="menu__link" href="#products">Our products</a>
+            </li>
+            <li class="menu__links-item">
+              <a class="menu__link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__heading">
+            ice cream made with
+            <span>passion</span>
+          </h1>
+          <ul class="hero__nav list">
+            <li class="hero__nav-item">
+              <a class="hero__nav-link" href="#products">Products</a>
+            </li>
+            <li class="hero__nav-item">
+              <a class="hero__nav-link" href="#production">How it’s made?</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Products -->
+      <section class="products">
+        <div class="container">
+          <a id="products"></a>
+          <h2 class="products__heading">
+            100% natural <span class="products__span">products</span>
+          </h2>
+          <ul class="products-list">
+            <li class="products-list__item1">
+              <picture class="products-list__img">
+                <source
+                  srcset="./images/Mobile/img2-mob-1x.png 1x, ./images/Mobile/img2-mob-2x.png 2x"
+                />
+                <img
+                  src="./images/Mobile/img2-mob-1x.png"
+                  alt="ice-cream"
+                  width="249"
+                  height="252"
+                />
+              </picture>
+              <h3 class="products-list__heading">ice cream</h3>
+              <svg class="products-list__icon" width="26" height="6">
+                <use class="" href="./images/Mobile/symbol-defs.svg#icon-white-dots"></use>
+              </svg>
+              <div></div>
+              <p class="products__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et. dolore magna aliqua facilisis.
+              </p>
+              <button class="products__arrow-info">
+                <img
+                  src="./images/Mobile/arrow-right-mob-1x.png"
+                  alt="more info"
+                  width="40"
+                  height="40"
+                />
+              </button>
+            </li>
+            <li class="products-list__item2">
+              <picture class="products-list__img">
+                <source
+                  srcset="./images/Mobile/img3-mob-1x.png 1x, ./images/Mobile/img3-mob-2x.png 2x"
+                />
+                <img
+                  src="./images/Mobile/img3-mob-1x.png"
+                  alt="ice coffee"
+                  width="249"
+                  height="252"
+                />
+              </picture>
+              <h3 class="products-list__heading">ice coffee</h3>
+              <svg class="products-list__icon" width="26" height="6">
+                <use class="" href="./images/Mobile/symbol-defs.svg#icon-white-dots"></use>
+              </svg>
+              <p class="products__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et. dolore magna aliqua facilisis.
+              </p>
+              <button class="products__arrow-info">
+                <img
+                  src="./images/Mobile/arrow-right-mob-1x.png"
+                  alt="more info"
+                  width="40"
+                  height="40"
+                />
+              </button>
+            </li>
+            <li class="products-list__item3">
+              <picture class="products-list__img">
+                <source
+                  srcset="./images/Mobile/img4-mob-1x.png 1x, ./images/Mobile/img4-mob-2x.png 2x"
+                />
+                <img
+                  src="./images/Mobile/img4-mob-1x.png"
+                  alt="milkshakes"
+                  width="249"
+                  height="252"
+                />
+              </picture>
+              <h3 class="products-list__heading">milkshakes</h3>
+              <svg class="products-list__icon" width="26" height="6">
+                <use class="" href="./images/Mobile/symbol-defs.svg#icon-white-dots"></use>
+              </svg>
+              <p class="products__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et. dolore magna aliqua facilisis.
+              </p>
+              <button class="products__arrow-info">
+                <img
+                  src="./images/Mobile/arrow-right-mob-1x.png"
+                  alt="more info"
+                  width="40"
+                  height="40"
+                />
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- how it’s made? -->
+      <section class="production">
+        <a id="production"></a>
+        <div class="container">
+          <h2 class="production__heading">
+            tradition and love <span class="production__heading-span">how it’s made?</span>
+          </h2>
+          <picture class="production__img-top">
+            <source
+              srcset="./images/Mobile/img5-mob-1x.png 1x, ./images/Mobile/img5-mob-2x.png 2x"
+            />
+            <img src="./images/Mobile/img5-mob-1x.png" alt="milkshakes" width="280" height="279" />
+          </picture>
+          <div class="production__description-wrap">
+            <p class="production__description">
+              Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus,
+              faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+            </p>
+            <p class="production__description1">
+              Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus
+              orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a
+              feugiat urna maximus. Cras massa nibh, tincidunt.
+            </p>
+            <p class="production__description2">Aliquam erat volutpat. Aenean accumsan.</p>
+            <button class="production__button" type="button">
+              Read more
+              <svg class="production__icon" width="15" height="22">
+                <use class="" href="./images/Mobile/symbol-defs.svg#small-arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="production__list">
+            <li class="production__list-item">
+              <picture class="production__list-icon">
+                <source
+                  srcset="./images/Mobile/icon1-mob-1x.png 1x, ./images/Mobile/icon1-mob-2x.png 2x"
+                />
+                <img
+                  src="./images/Mobile/icon1-mob-1x.png"
+                  alt="milk bucket"
+                  width="33"
+                  height="50"
+                />
+              </picture>
+              <h3 class="production__list-heading">721</h3>
+              <p class="production__list-description">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
+            </li>
+            <li class="production__list-item">
+              <picture class="production__list-icon">
+                <source
+                  srcset="./images/Mobile/icon2-mob-1x.png 1x, ./images/Mobile/icon2-mob-2x.png 2x"
+                />
+                <img
+                  src="./images/Mobile/icon2-mob-1x.png"
+                  alt="fruit bucket"
+                  width="50"
+                  height="50"
+                />
+              </picture>
+              <h3 class="production__list-heading">16kg</h3>
+              <p class="production__list-description">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
+            </li>
+            <li class="production__list-item">
+              <picture class="production__list-icon">
+                <source
+                  srcset="./images/Mobile/icon3-mob-1x.png 1x, ./images/Mobile/icon3-mob-2x.png 2x"
+                />
+                <img
+                  src="./images/Mobile/icon3-mob-1x.png"
+                  alt="ice cream bar"
+                  width="44"
+                  height="50"
+                />
+              </picture>
+              <h3 class="production__list-heading">84</h3>
+              <p class="production__list-description">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
+            </li>
+          </ul>
+          <picture class="production__img-bottom">
+            <source
+              srcset="./images/Mobile/img6-mob-1x.jpg 1x, ./images/Mobile/img6-mob-2x.jpg 2x"
+            />
+            <img
+              src="./images/Mobile/img6-mob-1x.jpg"
+              alt="ice-cream samples"
+              width="320"
+              height="122"
+            />
+          </picture>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="testimonials">
+        <a id="testimonials"></a>
+        <div class="container">
+          <h2 class="visually-hidden">Testimonials</h2>
+          <ul class="testimonials__list">
+            <li class="testimonials__item">
+              <img
+                class="testimonials__img"
+                src="./images/Mobile/testimonials1.png"
+                alt="testimonials1"
+                width="85"
+                height="85"
+              />
+              <p class="testimonials__comment">
+                Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+                hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+              </p>
+              <svg class="testimonials__icon" width="32" height="4" aria-label="red-dots">
+                <use href="./images/Mobile/symbol-defs.svg#icon-red-dots"></use>
+              </svg>
+              <h3 class="testimonials__name">Emily, Los Angeles</h3>
+            </li>
+            <!-- <svg class="testimonials__nav" width="72" height="12" aria-label="redhome-dots">
+            <use class="" href="./images/Mobile/symbol-defs.svg#icon-redhome-dots"></use>
+          </svg> -->
+            <li class="testimonials__item">
+              <img
+                class="testimonials__img"
+                src="./images/Mobile/testimonials2.png"
+                alt="testimonials2"
+                width="85"
+                height="85"
+              />
+              <p class="testimonials__comment">
+                Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+                hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+              </p>
+              <svg class="testimonials__icon" width="32" height="4" aria-label="red-dots">
+                <use class="" href="./images/Mobile/symbol-defs.svg#icon-red-dots"></use>
+              </svg>
+              <h3 class="testimonials__name">Lisa, Chicago</h3>
+            </li>
+            <li class="testimonials__item">
+              <img
+                class="testimonials__img"
+                src="./images/Mobile/testimonials3.png"
+                alt="testimonials3"
+                width="85"
+                height="85"
+              />
+              <p class="testimonials__comment">
+                Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+                hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+              </p>
+              <svg class="testimonials__icon" width="32" height="4" aria-label="red-dots">
+                <use class="" href="./images/Mobile/symbol-defs.svg#icon-red-dots"></use>
+              </svg>
+              <h3 class="testimonials__name">Pam, New York</h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Our locations -->
+      <section class="locations">
+        <div class="container">
+          <h2 class="visually-hidden">Our locations</h2>
+          <ul class="locations__list">
+            <li class="locations__item">
+              <h3 class="locations__title">CAFE</h3>
+              <h4 class="locations__city">Chicago</h4>
+              <p class="locations__description">
+                Fusce ut velit laoreet, tempus arcu molestie vulputate
+              </p>
+              <ul class="locations__work-days-list">
+                <li class="locations__work-days-item">
+                  <h4 class="locations__work-days1">Monday - Friday</h4>
+                  <p class="locations__work-hours1">06:00 AM - 10:00 PM</p>
+                </li>
+                <li class="locations__work-days-item">
+                  <h4 class="locations__work-days2">Saturday - Sunday</h4>
+                  <p class="locations__work-hours2">08:00 AM - 16:00 PM</p>
+                </li>
+              </ul>
+              <ul class="locations__contacts">
+                <li class="locations__phone">
+                  <a href="tel:+61(0)383766284">+61(0) 383 766 284</a>
+                </li>
+                <li class="locations__mail">
+                  <a href="mailto:noreply@envato.com">noreply@envato.com</a>
+                </li>
+              </ul>
+            </li>
+            <li class="locations__item2">
+              <h3 class="locations__title2">FOODTRUCK</h3>
+              <h4 class="locations__city">Los Angeles</h4>
+              <p class="locations__description">
+                Fusce ut velit laoreet, tempus arcu molestie vulputate
+              </p>
+              <ul class="locations__work-days-list">
+                <li class="locations__work-days-item">
+                  <h4 class="locations__work-days1">Monday - Friday</h4>
+                  <p class="locations__work-hours1">06:00 AM - 10:00 PM</p>
+                </li>
+                <li class="locations__work-days-item">
+                  <h4 class="locations__work-days2">Saturday - Sunday</h4>
+                  <p class="locations__work-hours2">08:00 AM - 16:00 PM</p>
+                </li>
+              </ul>
+              <ul class="locations__contacts">
+                <li class="locations__phone">
+                  <a href="tel:+61(0)383766284">+61(0) 383 766 284</a>
+                </li>
+                <li class="locations__mail">
+                  <a href="mailto:noreply@envato.com">noreply@envato.com</a>
+                </li>
+              </ul>
+            </li>
+            <li class="locations__item3">
+              <h3 class="locations__title">CAFE</h3>
+              <h4 class="locations__city">New York</h4>
+              <p class="locations__description">
+                Fusce ut velit laoreet, tempus arcu molestie vulputate
+              </p>
+              <ul class="locations__work-days-list">
+                <li class="locations__work-days-item">
+                  <h4 class="locations__work-days1">Monday - Friday</h4>
+                  <p class="locations__work-hours1">06:00 AM - 10:00 PM</p>
+                </li>
+                <li class="locations__work-days-item">
+                  <h4 class="locations__work-days2">Saturday - Sunday</h4>
+                  <p class="locations__work-hours2">08:00 AM - 16:00 PM</p>
+                </li>
+              </ul>
+              <ul class="locations__contacts">
+                <li class="locations__phone">
+                  <a href="tel:+61(0)383766284">+61(0) 383 766 284</a>
+                </li>
+                <li class="locations__mail">
+                  <a href="mailto:noreply@envato.com">noreply@envato.com</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <button class="locations__button" type="button">
+                Our Locations
+                <svg class="locations__icon" width="15" height="22" aria-label="Mobile menu switch">
+                  <use class="" href="./images/Mobile/symbol-defs.svg#small-arrow"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button class="locations__button2" type="button">
+                Franchise
+                <svg class="locations__icon" width="15" height="22" aria-label="Mobile menu switch">
+                  <use class="" href="./images/Mobile/symbol-defs.svg#small-arrow"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <a id="contact"></a>
+        <div class="container">
+          <div class="footer__wrap">
+            <h2 class="footer__title">
+              homemade ice cream made <span class="footer__title-span">with passion</span>
+            </h2>
+            <ul class="footer-links">
+              <li class="footer-links__item">
+                <a class="footer-links__link" href="https://www.github.com">
+                  <svg width="32" height="32" class="footer-links__icon">
+                    <use href="./images/Mobile/symbol-defs.svg#icon-github"></use></svg
+                ></a>
+              </li>
+              <li class="footer-links__item">
+                <a class="footer-links__link" href="https://www.telegram.org">
+                  <svg width="32" height="32" class="footer-links__icon">
+                    <use href="./images/Mobile/symbol-defs.svg#icon-telegram"></use></svg
+                ></a>
+              </li>
+              <li class="footer-links__item">
+                <a class="footer-links__link" href="https://www.facebook.com">
+                  <svg width="32" height="32" class="footer-links__icon">
+                    <use href="./images/Mobile/symbol-defs.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+            </ul>
+            <p class="footer__phone">
+              Feel free to contact
+              <a class="footer__phone-number" href="tel:+61(0)383766284">+61(0) 383 766 284</a>
+            </p>
+          </div>
+        </div>
+        <p class="footer__copyright">
+          © 2019 - IceCream.<br />
+          All Rights Reserved.
+        </p>
+      </footer>
+    </main>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
