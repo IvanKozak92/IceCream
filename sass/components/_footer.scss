@@ -1,8 +1,23 @@
 .footer {
-    padding-top: 50px;
+    padding-top: 80px;
     padding-bottom: 25px;
     background: #FFF5F6;
     text-align: center;
+
+@media screen and (min-width:1280px) {
+        padding-bottom: 10px;
+    }
+}
+
+.footer__wrap {
+@media screen and (min-width:768px) {
+    display: flex;
+    padding-bottom: 80px;
+    }
+
+@media screen and (min-width:1280px) {
+    justify-content: space-between;
+}
 }
 
 .footer__title {
@@ -15,6 +30,19 @@
     text-align: left;
     color: #FFA5BA;
     padding-right: 40px;
+
+    @media screen and (min-width:768px) {
+        width: 350px;
+        font-size: 26px;
+        line-height: 1.15;
+        }
+
+    @media screen and (min-width:1280px) {
+        width: 520px;
+        font-size: 30px;
+        line-height: 1.13;
+        letter-spacing: 0.04em;
+        }
 }
 
 .footer__title-span {
@@ -23,7 +51,18 @@
     letter-spacing: 0.04em;
     color: #D41443;
     display: block;
-    margin-top: 17px;
+    margin-top: 15px;
+
+    @media screen and (min-width:768px) {
+            font-size: 48px;
+            line-height: 1.15;
+        }
+
+    @media screen and (min-width:1280px) {
+            font-size: 58px;
+            line-height: 1.14;
+            letter-spacing: 0.06em;
+        }
 }
 
 .footer-links {
@@ -31,8 +70,12 @@
     justify-content: space-between;
     width: 153px;
     height: 32px;
-    margin-top: 43px;
+    margin-top: 40px;
     margin-left: auto;
+    
+@media screen and (min-width:768px) {
+        margin-top: 0;
+    }
 }
 
 .footer-links__item {
@@ -53,13 +96,22 @@
     }   
 }
 
-.footer__phone {
-    margin-top: 46px;
+.footer__contact {
+    margin-top: 30px;
+    margin-bottom: 30px;
     font-weight: 700;
     font-size: 12px;
     line-height: 1.86;
     text-align: right;
     color: #000000;
+
+    @media screen and (min-width:768px) {
+        font-size: 14px;
+        }
+    
+    @media screen and (min-width:1280px) {
+        font-size: 16px;
+        }
 }
 
 .footer__phone-number {
@@ -67,12 +119,25 @@
 }
 
 .footer__copyright {
+    width: 150px;
     padding-top: 25px;
-    margin-top: 43px;
-    border-top: 1px solid #E1E1E1;
+    margin: 0 auto;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.52;
     text-align: center;
     color: #907E82;
+
+@media screen and (min-width:768px) {
+    width: 276px;
+    line-height: 1.86;
+        }
+
+@media screen and (min-width:1280px) {
+    padding-top: 10px;
+}
+}
+
+.footer__copyright-border {
+    border-top: 1px solid #E1E1E1;
 }

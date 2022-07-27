@@ -1,31 +1,107 @@
 .testimonials {
     padding-top: 153px;
-    padding-bottom: 170px;
+
+    @media screen and (min-width:768px) {
+        padding-top: 250px;
+        }
+
+    @media screen and (min-width:1280px) {
+        padding-top: 350px;
+        }
 }
 
+.testimonials__item {
+    &:first-child {
+            display: block;
+        }
+    display: none;
+}
+ 
 .testimonials__img {
     margin: 0 auto;
 }
 
 .testimonials__comment {
     width: 280px;
-    height: 308px;
-    padding: 43px 62px 26px 62px;
-    margin: 0 auto;
+    height: 300px;
+    padding: 30px 63px 0 63px;
+    margin: 29px auto 0 auto;
     font-weight: 500;
     font-size: 12px;
-    line-height: 255%;
+    line-height: 2.55;
     text-align: center;
+    background-color: #FAFAFA;
 
-    background-image: url('../images/Mobile/quotes-1x.png'), url('../images/mobile/text-underline-1x.png');
-        background-size: 54px, 180px;
-        background-repeat: no-repeat;
-        background-position: top 28px left 61px, top 71px left 50px;
+    background-image: url('../images/Mobile/quotes-1x.png'), repeating-linear-gradient(to bottom,
+            transparent,
+            transparent 30px,
+            #E1E1E1 30.5px,
+            #E1E1E1 31px);
+    background-size: 54px, 180px;
+    background-repeat: no-repeat;
+    background-position: top 15px left 53px, top 30px left 50px;
 
     @media (in-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image: url('../images/Mobile/quotes-2x.png'), url('../images/mobile/text-underline-2x.png');
+        background-image: url('../images/Mobile/quotes-2x.png'), repeating-linear-gradient(to bottom,
+                transparent,
+                transparent 30px,
+                #E1E1E1 30.5px,
+                #E1E1E1 31px);
+}
+
+@media screen and (min-width:768px) {
+    width: 620px;
+    height: 154px;
+    padding: 43px 80px 26px 80px;
+    font-size: 14px;
+    line-height: 2.16;
+    letter-spacing: 0.04em;
+
+    background-image: url('../images/Mobile/quotes-1x.png'), repeating-linear-gradient(to bottom,
+                transparent,
+                transparent 28px,
+                #E1E1E1 29px,
+                #E1E1E1 30px);
+    background-size: 54px, 524px;
+    background-position: top 28px left 39px, top 42px left 50px;
+
+    @media (in-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('../images/Mobile/quotes-2x.png'), repeating-linear-gradient(to bottom,
+                    transparent,
+                    transparent 28px,
+                    #E1E1E1 29px,
+                    #E1E1E1 30px);
+}
+}
+
+@media screen and (min-width:1280px) {
+    width: 926px;
+    height: 130px;
+    padding: 43px 90px 26px 90px;
+    font-size: 16px;
+    line-height: 1.86;
+
+    background-image: url('../images/Mobile/quotes-1x.png'), repeating-linear-gradient(to bottom,
+                transparent,
+                transparent 28px,
+                #E1E1E1 29px,
+                #E1E1E1 30px);
+        background-size: 54px, 813px;
+        background-position: top 28px left 52px, top 42px left 50px;
+    
+    @media (in-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('../images/Mobile/quotes-2x.png'), repeating-linear-gradient(to bottom,
+                    transparent,
+                    transparent 28px,
+                    #E1E1E1 29px,
+                    #E1E1E1 30px);
+        }
 }
 }
 
@@ -38,10 +114,19 @@
     margin: 18px auto 0 auto;
     font-weight: 500;
     font-size: 14px;
-    line-height: 186%;
+    line-height: 1.86;
     text-align: center;
+
+    @media screen and (min-width:768px) {
+        font-size: 16px;
+        }
+
+    @media screen and (min-width:1280px) {
+            font-size: 20px;
+        }
 }
 
 .testimonials__nav {
-    margin-top: 30px;
+    display: block;
+    margin: 30px auto 0 auto;
 }
